@@ -12,7 +12,7 @@ print(path)
 It will show the default downloading path, we need to manually copy it to the current directory for the following steps.
 
 ## Data Processing
-Before loading the data, the `DB_PARAMS` in the `*.py` need to be replaced with users own PostgreSQL settings (by default the port of postgreSQL should be 5432). 
+Before loading the data, the `DB_PARAMS` in the `*.py` need to be replaced with users own PostgreSQL settings (by default the port of postgreSQL should be 5432, if you are using multiple versions of postgreSQL, consider to change it to 5433, 5434, ..., instead.). 
 Changing the value of 'output_dir` to set the path to store the images.
 ```python
 # Load data, it will take a super long time because of downloading images, you can change the value of N to run in smaller batch

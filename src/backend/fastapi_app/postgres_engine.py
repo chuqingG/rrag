@@ -13,7 +13,7 @@ async def create_postgres_engine(*, host, username, database, password, sslmode)
     logger.info("Authenticating to PostgreSQL using password...")
 
     # Chuqing: change this for my pg@16
-    DATABASE_URI = f"postgresql+asyncpg://{username}:{password}@{host}:5433/{database}"
+    DATABASE_URI = f"postgresql+asyncpg://{username}:{password}@{host}:5432/{database}"
     # Specify SSL mode if needed
     if sslmode:
         DATABASE_URI += f"?ssl={sslmode}"

@@ -1,7 +1,9 @@
-# Relational RAG
+# Relational RAG: A RAG over PostgreSQL
 
-This repo implements a Relational RAG proof-of-concept using PostgreSQL. 
+This repo implements a Relational RAG proof-of-concept using PostgreSQL. This project can be deployed purely locally, without any usage of any paid api.
 
+- Chat Model: Llama-3.1-8B
+- Embedding Model: [Visualized BGE](https://huggingface.co/BAAI/bge-visualized) (Multi-modal)
 ## Start
 ### Data Preparation
 Go to `data_preparation/README.md` and follow the instructions.
